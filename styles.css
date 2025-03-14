@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #707070;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+#colorDisplay {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between elements */
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f4f4f4;
+  margin-top: 10px;
+  height: 20px; /* Set a fixed height for all child elements */
+}
+
+/* Color Box */
+#colorBox {
+  width: 20px;
+  height: 100%; /* Ensure it takes full height */
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+/* Color Code */
+#colorCode {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1; /* Allow it to expand */
+  text-align: center; /* Center text */
+  height: 100%; /* Match the parent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Copy Button */
+#copyBtn {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  margin: 0;
+  width: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Style the SVG inside the button */
+#copyBtn svg {
+  width: 18px;
+  height: 18px;
+  stroke: black;
+}
+
+/* Hover effect */
+#copyBtn:hover {
+  background-color: #c5c5c5;
+}
